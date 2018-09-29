@@ -10,5 +10,11 @@ public class GolBoard {
 		this.width = j;
 	}
 
+	public Object getCell(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
 	
 }

@@ -25,4 +25,8 @@ public class GolBoardTest {
 		assertEquals(2, b.width);
 	}
 
+	@Test
+	public void testGetCell(){
+		assertEquals(0, new GolBoard(1, 2).getCell(0,0));
+	}
 }
