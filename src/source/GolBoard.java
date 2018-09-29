@@ -55,8 +55,7 @@ public class GolBoard {
 	}
 
 	public void updateState() {
-		// TODO Auto-generated method stub
-		
+		int [][] newCells = 	new int [height][width];	
 	}
 
 	
