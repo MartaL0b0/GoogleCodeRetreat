@@ -31,4 +31,11 @@ public class GolBoardTest {
 		b.setCell(0, 0, 1);
 		assertEquals(1, b.getCell(0,0));
 	}
+	
+	@Test
+	public void testGetNighbours(){
+		GolBoard b = new GolBoard(3, 3);
+		b.setCell(0, 0, 1);
+		assertEquals(0, b.getNeighbours(1,1));
+	}
 }

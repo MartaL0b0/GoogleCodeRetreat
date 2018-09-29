@@ -22,6 +22,11 @@ public class GolBoard {
 		
 	}
 
+	public int getNeighbours(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 	
 }
