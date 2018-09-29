@@ -45,8 +45,12 @@ public class GolBoard {
 	}
 
 	public int getNextState(int i, int j) {
+		if(getNeighbours(i,j) < 2){
+			return 0;
+		} else {
+			return 1;
+		}
 		
-		return 0;
 	}
 
 	
