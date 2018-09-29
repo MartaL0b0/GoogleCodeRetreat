@@ -13,7 +13,18 @@ public class GolBoard {
 	}
 
 	public int getCell(int i, int j) {
-		
+		if (i == -1){
+			i = height -1;
+		}
+		if (i == height){
+			i = 0;
+		}
+		if (j == -1){
+			j = width -1;
+		}
+		if (j == width){
+			j = 0;
+		}
 		return this.cells[i][j];
 	}
 
