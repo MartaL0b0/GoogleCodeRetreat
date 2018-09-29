@@ -24,13 +24,13 @@ public class GolBoard {
 
 	public int getNeighbours(int h, int w) {
 		int count = 0;
-		for (int i = h -1; i < h+2; i++){
+		for (int i = h - 1; i < h+2; i++){
 			for (int j = w -1; j < w +2; j++){
 				count += this.getCell(i, j);
 			}
 		}
 		
-		return count;
+		return count - this.getCell(h, w);
 	}
 
 	

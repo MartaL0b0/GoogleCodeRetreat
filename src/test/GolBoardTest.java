@@ -38,4 +38,6 @@ public class GolBoardTest {
 		//b.setCell(0, 0, 1);
 		assertEquals(0, b.getNeighbours(1,1));
 	}
+	
+	
 }
