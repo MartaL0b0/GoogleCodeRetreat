@@ -45,4 +45,11 @@ public class GolBoardTest {
 		//b.setCell(0, 0, 1);
 		assertEquals(0, b.getNeighbours(0,0));
 	}
+	
+	@Test
+	public void testAliveToDeadLow(){
+		GolBoard b = new GolBoard(3, 3);
+		b.setCell(1, 1, 1);
+		assertEquals(0, b.getNextState(1,1));
+	}
 }

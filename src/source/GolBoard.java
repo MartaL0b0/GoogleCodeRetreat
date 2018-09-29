@@ -44,6 +44,11 @@ public class GolBoard {
 		return count - this.getCell(h, w);
 	}
 
+	public int getNextState(int i, int j) {
+		
+		return 0;
+	}
+
 	
 	
 }
