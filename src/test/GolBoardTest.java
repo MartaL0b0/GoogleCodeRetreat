@@ -52,4 +52,14 @@ public class GolBoardTest {
 		b.setCell(1, 1, 1);
 		assertEquals(0, b.getNextState(1,1));
 	}
+	
+	@Test
+	public void testAliveToDeadHigh(){
+		GolBoard b = new GolBoard(3, 3);
+		b.setCell(1, 1, 1);
+		b.setCell(0, 1, 1);
+		b.setCell(1, 0, 1);
+		b.setCell(1, 2, 1);
+		assertEquals(1, b.getNextState(1,1));
+	}
 }
