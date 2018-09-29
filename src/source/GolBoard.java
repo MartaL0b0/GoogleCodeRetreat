@@ -49,10 +49,13 @@ public class GolBoard {
 			return 0;
 		} else if (getCell(i,j) == 0 && (getNeighbours(i,j) == 2)){
 			return 0;
-		}else{
+		} else{
 			return 1;
-			
 		}
+	}
+
+	public void updateState() {
+		// TODO Auto-generated method stub
 		
 	}
 

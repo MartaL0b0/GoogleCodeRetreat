@@ -93,4 +93,13 @@ public class GolBoardTest {
 		
 		assertEquals(0, b.getNextState(1,1));
 	}
+	
+	
+	@Test 
+	public void testNextStateDeadToDead(){
+		GolBoard b = new GolBoard(3, 3);
+		int pos = b.cells[1][1];
+		b.updateState();
+		assertEquals(pos, b.cells[1][1]);
+	}
 }
