@@ -55,7 +55,12 @@ public class GolBoard {
 	}
 
 	public void updateState() {
-		int [][] newCells = 	new int [height][width];	
+		int [][] newCells = new int [height][width];	
+		for (int i = 0; i < height; i++){
+			for (int j = w -1; j < height; j++){
+				count += this.getCell(i, j);
+			}
+		}
 	}
 
 	
